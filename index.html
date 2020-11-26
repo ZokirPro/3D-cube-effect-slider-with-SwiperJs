@@ -15,15 +15,15 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide1">
-                <h1>Lovely flowers</h1>
+                <h1>Lovely cars</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="swiper-slide slide2">
-                <h1>Lovely flowers</h1>
+                <h1>Lovely cars</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="swiper-slide slide3">
-                <h1>Lovely flowers</h1>
+                <h1>Lovely cars</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
@@ -40,9 +40,12 @@
         var swiper = new Swiper('.swiper-container',{
             effect:'cube',
             grabCursor:true,
+            loop:true,
             cubeEffect:{
-                shadow:false,
-                slideShadows:false
+                shadow:true,
+                slideShadows:true,
+                shadowOffset: 20,
+                 shadowScale: 0.94,
             },
             navigation:{
                 nextEl:'.swiper-button-next',
